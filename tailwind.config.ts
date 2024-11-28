@@ -19,6 +19,9 @@ export default {
         majorelleBlue: '#6A55E0ff',
         blueCrayola: '#3377F8ff',
       },
+      boxShadow: {
+        'custom-shadow': 'inset -2px 0px 2px 1px rgba(255,255,255,0.75)',
+      },
     },
   },
   plugins: [],

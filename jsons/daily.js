@@ -8,7 +8,8 @@ export const userEx = {
       "type": "event",
       "title": "Team Meeting",
       "description": "Monthly team meeting",
-      "timestamp": 1732665600,
+      "timestamp": 1732809600000, // Start time
+      "finishTimestamp": 1732813200000, // One hour after start
       "recurrence": {
         "type": "monthly",
         "onDay": [27]
@@ -22,7 +23,8 @@ export const userEx = {
       "type": "task",
       "title": "Grocery Shopping",
       "description": "Weekly grocery run for household supplies",
-      "timestamp": 1732665600,
+      "timestamp": 1732809600000 , // Start time
+      "finishTimestamp": 1732813200000 , // One hour after start
       "recurrence": {
         "type": "weekly",
         "onDay": ["Monday"]
@@ -36,7 +38,8 @@ export const userEx = {
       "type": "habit",
       "title": "Morning Jog",
       "description": "Daily morning jog around the park",
-      "timestamp": 1733142000,
+      "timestamp": 1732745606358, // Start time
+      "finishTimestamp": 1732749206358, // One hour after start
       "recurrence": {
         "type": "daily"
       },
@@ -45,4 +48,4 @@ export const userEx = {
       "logo": "morning_jog_logo.png"
     }
   ]
-}
+};

@@ -1,9 +1,5 @@
 "use client"
 
-import Image from 'next/image'
-import { CiUser } from 'react-icons/ci'
-import { HiMiniMagnifyingGlass } from 'react-icons/hi2'
-import { IoSettingsOutline } from 'react-icons/io5'
 import { format, getDate, getDay, getHours, getMonth, getYear } from 'date-fns'
 import { userEx } from './../../jsons/daily';
 import { UpcomingFocus } from './components/UpcomingFocus'
@@ -18,13 +14,13 @@ export default function Home() {
   const todayFormatted = format(now, 'MMM, dd')
 
   const [today, setToday] = useState({ year: 0, month: 0, day: 0, hour: 0 });
-  const [todayInstances, setTodayInstances] = useState<any[]>([])
+  const [todayTasks, setTodayTasks] = useState<any[]>([])
 
 
 
   useEffect(() => {
     getTodaysTime()
-  }, [user?.instances])
+  }, [user?.tasks])
 
   useEffect(() => {
     if (today.year && today.month && today.day) {
@@ -44,17 +40,17 @@ export default function Home() {
 
   function getTodaysTasks() {
     console.log('user:', user)
-    setTodayInstances(
-      user?.instances?.filter(
-        instance => {
-          console.log('getDay(instance?.timestamp):', getDay(instance?.timestamp))
-          return getDate(instance?.timestamp) === today.day &&
-            getMonth(instance?.timestamp) + 1 === today.month &&
-            getYear(instance?.timestamp) === today.year
+    setTodayTasks(
+      user?.tasks?.filter(
+        task => {
+          console.log('getDay(task?.timestamp):', getDay(task?.timestamp))
+          return getDate(task?.timestamp) === today.day &&
+            getMonth(task?.timestamp) + 1 === today.month &&
+            getYear(task?.timestamp) === today.year
         }
       )
     )
-    console.log('setTodayInstances:', todayInstances)
+    console.log('setTodaytasks:', todayTasks)
   }
 
 
@@ -67,8 +63,8 @@ export default function Home() {
           <span>•</span>
           <span>{dayOfWeek}</span>
         </h2>
-        <UpcomingFocus todayInstances={todayInstances} today={today} />
-        <TodoContainer />
+        <UpcomingFocus todayTasks={todayTasks} today={today} />
+        <TodoContainer tasks={todayTasks}/>
     </>
   )
 }

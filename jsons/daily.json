@@ -2,9 +2,9 @@
     "userId": "12345",
     "username": "johndoe",
     "email": "johndoe@example.com",
-    "instances": [
+    "tasks": [
       {
-        "id": "instance1",
+        "id": "task1",
         "type": "event",
         "title": "Team Meeting",
         "description": "Monthly team meeting",
@@ -19,7 +19,7 @@
         "importance": "high"
       },
       {
-        "id": "instance2",
+        "id": "task2",
         "type": "task",
         "title": "Grocery Shopping",
         "description": "Weekly grocery run for household supplies",
@@ -34,7 +34,7 @@
         "importance": "medium"
       },
       {
-        "id": "instance3",
+        "id": "task3",
         "type": "habit",
         "title": "Morning Jog",
         "description": "Daily morning jog around the park",

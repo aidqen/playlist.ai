@@ -18,11 +18,21 @@ export default {
         jade: '#47AB6Fff',
         majorelleBlue: '#6A55E0ff',
         blueCrayola: '#3377F8ff',
+        pastelPeach: '#FFD1BA',
+        softMintGreen: '#D5F9D4',
+        powderBlue: '#BEE3F9',
+        lavenderHaze: '#E8DAEF',
+        lightLemon: '#FFF5BA',
       },
       boxShadow: {
         'custom-shadow': 'inset -2px 0px 2px 1px rgba(255,255,255,0.75)',
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui'),],
+  daisyui: {
+    themes: [
+      "night",
+    ]
+  }
 } satisfies Config;

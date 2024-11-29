@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
+import { AppHeader } from './components/AppHeader'
+
+import '@fontsource-variable/montserrat';
 
 export const metadata: Metadata = {
   title: 'Daily Planner',
@@ -14,9 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className='bg-night p-4 w-full'>
-        {children}
-        </body>
+      <body className="w-full">
+        <AppHeader />
+        <main className='p-4 pt-10'>{children}</main>
+      </body>
     </html>
   )
 }

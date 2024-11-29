@@ -8,6 +8,7 @@ import { format, getDate, getDay, getHours, getMonth, getYear } from 'date-fns'
 import { userEx } from './../../jsons/daily';
 import { UpcomingFocus } from './components/UpcomingFocus'
 import { useEffect, useState } from 'react'
+import { TodoContainer } from './components/TodoContainer'
 
 export default function Home() {
   const user = userEx
@@ -59,36 +60,15 @@ export default function Home() {
 
   console.log('dateNow:', todayFormatted)
   return (
-    <div className="flex flex-col w-full">
-      <header className="flex flex-row w-full items-center justify-between">
-        <div className="h-9 w-9 flex justify-center items-center bg-eerieBlack text-white rounded-full">
-          <IoSettingsOutline className="w-6 h-6" />
-        </div>
-        <div className="w-max relative">
-          <input
-            type="text"
-            name="tasks"
-            className="max:sm-w-[12rem] max-sm:h-[2.5rem] bg-eerieBlack rounded-[20px] ps-10 text-xs"
-            placeholder="Search..."
-          />
-          <HiMiniMagnifyingGlass
-            className="absolute top-1/2 -translate-y-1/2 left-4 text-white"
-            size={20}
-          />
-        </div>
-        <div className="h-9 w-9 flex justify-center items-center text-white bg-eerieBlack rounded-full">
-          <CiUser className="w-6 h-6" />
-        </div>
-      </header>
-      <main className="w-full h-full pt-8">
+    <>
         <h1 className="text-4xl mb-2 text-white">Today</h1>
-        <h2 className="flex flex-row items-center ps-1 gap-2 text-[#444444ff] mb-5">
+        <h2 className="flex flex-row items-center ps-1 gap-2 text-base-content mb-5">
           <span>{todayFormatted}</span>
           <span>•</span>
           <span>{dayOfWeek}</span>
         </h2>
         <UpcomingFocus todayInstances={todayInstances} today={today} />
-      </main>
-    </div>
+        <TodoContainer />
+    </>
   )
 }

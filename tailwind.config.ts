@@ -23,9 +23,11 @@ export default {
         powderBlue: '#BEE3F9',
         lavenderHaze: '#E8DAEF',
         lightLemon: '#FFF5BA',
+        whiteLowOpacity: 'rgb(255 255 255 / 20%)'
       },
       boxShadow: {
         'custom-shadow': 'inset -2px 0px 2px 1px rgba(255,255,255,0.75)',
+        upcomingFocus: '0 0 20px 0px rgb(0 0 0 / 43%);'
       },
     },
   },

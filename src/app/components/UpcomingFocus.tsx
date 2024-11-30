@@ -10,9 +10,9 @@ interface UpcomingProps {
 export function UpcomingFocus(props: UpcomingProps) {
   const { todayTasks, today } = props
   const [nextTasks, setNextTasks] = useState<any[]>([])
-  console.log('nextTasks:', nextTasks)
+  
 
-  console.log('today:', today)
+  
 
   useEffect(() => {
     setNextUpTasks()
@@ -25,7 +25,7 @@ export function UpcomingFocus(props: UpcomingProps) {
     setNextTasks(tasks)
   }
 
-  console.log('todayTasks:', todayTasks)
+  
   return (
     <>
       <h3 className="mb-4 flex flex-row items-center gap-2 text-white font-normal">
@@ -34,7 +34,7 @@ export function UpcomingFocus(props: UpcomingProps) {
           6 tasks
         </span>
       </h3>
-      <div className="grid grid-cols-[50%50%] p-4 bg-base-300 text-black rounded-[15px]">
+      <div className="grid grid-cols-[50%50%] p-4 bg-base-300 shadow-upcomingFocus  text-black rounded-[15px]">
         <div className="flex flex-col justify-between col-start-1">
           <ul className="flex flex-col items-start gap-3 mb-1">
             {todayTasks?.slice(0, 2).map(task => {
@@ -61,7 +61,7 @@ export function UpcomingFocus(props: UpcomingProps) {
           </div>
         </div>
         <div className="h-full flex items-center justify-center">
-          <button className="btn glass btn-neutral">Open Calendar</button>
+          <button className="btn btn-neutral text-white shadow-lg">Open Calendar</button>
         </div>
       </div>
     </>

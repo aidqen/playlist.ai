@@ -8,8 +8,8 @@ export const userEx = {
       "type": "event",
       "title": "Team Meeting",
       "description": "Monthly team meeting",
-      "timestamp": 1732870800000, // Start time
-      "finishTimestamp": 1732874400000, // One hour after start
+      "timestamp": 1732957200000, // Start time
+      "finishTimestamp": 1732960800000 , // One hour after start
       "recurrence": {
         "type": "monthly",
         "onDay": [27]
@@ -27,7 +27,7 @@ export const userEx = {
         {
           "id": "subtask2",
           "title": "Send agenda",
-          "isDone": false
+          "isDone": true
         }
       ]
     },
@@ -36,8 +36,8 @@ export const userEx = {
       "type": "task",
       "title": "Grocery Shopping",
       "description": "Weekly grocery run for household supplies",
-      "timestamp": 1732887000000, // Start time
-      "finishTimestamp": 1732887000000, // One hour after start
+      "timestamp": 1732964400000 , // Start time
+      "finishTimestamp": 1732968000000, // One hour after start
       "recurrence": {
         "type": "weekly",
         "onDay": ["Monday"]
@@ -50,11 +50,16 @@ export const userEx = {
         {
           "id": "subtask1",
           "title": "Make a list",
-          "isDone": false
+          "isDone": true
         },
         {
           "id": "subtask2",
           "title": "Check pantry",
+          "isDone": false
+        },
+        {
+          "id": "subtask3",
+          "title": "Check fridge",
           "isDone": false
         }
       ]
@@ -64,8 +69,8 @@ export const userEx = {
       "type": "habit",
       "title": "Morning Jog",
       "description": "Daily morning jog around the park",
-      "timestamp": 1732898400000, // Start time
-      "finishTimestamp": 1732902000000, // One hour after start
+      "timestamp": 1732978800000 , // Start time
+      "finishTimestamp": 1732982400000 , // One hour after start
       "recurrence": {
         "type": "daily"
       },

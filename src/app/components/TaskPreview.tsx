@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { ImCheckmark } from "react-icons/im"
-import { CircularProgress } from "./CircularProgress"
+import { CircularProgress } from "@/components/CircularProgress"
 import { ChevronDown, ChevronUp } from "lucide-react"
 import { ChevronUpDown } from "./ChevronUpDown"
 import { SubtaskPreview } from "./SubtaskPreview"

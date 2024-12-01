@@ -18,6 +18,7 @@ export default function Home() {
 
 
 
+
   useEffect(() => {
     getTodaysTime()
   }, [user?.tasks])

@@ -2,20 +2,21 @@
 
 import { TOGGLE_SIDEBAR } from "@/store/reducers/system.reducer"
 import { useDispatch } from "react-redux"
+import { toggleSidebar } from "@/store/actions/system.actions"
 
 
 export function AppHeader() {
   const dispatch = useDispatch()
 
-  function toggleSidebar() {
-    dispatch({ type: TOGGLE_SIDEBAR })
+  function onToggleSidebar() {
+    toggleSidebar()
   }
 
   return (
     <div className="navbar text-white">
       <div className="navbar-start">
         <div className="dropdown">
-          <div onClick={toggleSidebar} tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+          <div onClick={onToggleSidebar} tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"

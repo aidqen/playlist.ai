@@ -10,11 +10,11 @@ export function UpcomingTaskPreview(TaskPreviewProps: TaskPreviewProps) {
     const endTimeHours = format(task.finishTimestamp, "h:mmaaa");
 
     return (
-        <li className="flex flex-row h-10 w-full gap-2">
-            <div style={{ backgroundColor: task?.bg }} className="h-full min-w-[0.28rem] rounded-full"></div>
-            <div className="flex flex-col  w-full">
-                <h4 className="text-md text-white font-normal h-max truncate">{task?.title}</h4>
-                <p className="text-sm text-neutral-content h-max truncate uppercase">{startTimeHours} - {endTimeHours}</p>
+        <li className="flex items-center gap-2">
+            <div className="w-0.5 h-5 bg-cyan-400"></div>
+            <div>
+                <div className="text-white font-medium">Product Design</div>
+                <div className="text-gray-400 text-sm">12:00 - 13:30</div>
             </div>
         </li>
     )

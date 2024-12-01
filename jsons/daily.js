@@ -8,14 +8,14 @@ export const userEx = {
       "type": "event",
       "title": "Team Meeting",
       "description": "Monthly team meeting",
-      "timestamp": 1732957200000, // Start time
-      "finishTimestamp": 1732960800000 , // One hour after start
+      "timestamp": 1733054400000, // Start time
+      "finishTimestamp": 1733056200000 , // One hour after start
       "recurrence": {
         "type": "monthly",
         "onDay": [27]
       },
       "importance": "high",
-      "bg": "#6A55E0ff",
+      "bg": "#22d3ee",
       "logo": "team_meeting_logo.png",
       "isDone": false,
       "subtasks": [
@@ -36,14 +36,14 @@ export const userEx = {
       "type": "task",
       "title": "Grocery Shopping",
       "description": "Weekly grocery run for household supplies",
-      "timestamp": 1732964400000 , // Start time
-      "finishTimestamp": 1732968000000, // One hour after start
+      "timestamp": 1733058000000 , // Start time
+      "finishTimestamp": 1733059800000, // One hour after start
       "recurrence": {
         "type": "weekly",
         "onDay": ["Monday"]
       },
       "importance": "medium",
-      "bg": "#47AB6Fff",
+      "bg": "#f9a8d4",
       "logo": "grocery_shopping_logo.png",
       "isDone": false,
       "subtasks": [
@@ -69,8 +69,8 @@ export const userEx = {
       "type": "habit",
       "title": "Morning Jog",
       "description": "Daily morning jog around the park",
-      "timestamp": 1732978800000 , // Start time
-      "finishTimestamp": 1732982400000 , // One hour after start
+      "timestamp": 1733061600000 , // Start time
+      "finishTimestamp": 1733063400000 , // One hour after start
       "recurrence": {
         "type": "daily"
       },

@@ -23,7 +23,11 @@ export default {
         powderBlue: '#BEE3F9',
         lavenderHaze: '#E8DAEF',
         lightLemon: '#FFF5BA',
-        whiteLowOpacity: 'rgb(255 255 255 / 20%)'
+        whiteLowOpacity: 'rgb(255 255 255 / 20%)',
+        eerieBlack2: '#232323ff',
+        onyx: '#3C3C3Cff',
+        jet2: '#2D2D2Dff',
+        jet3: '#AEAEAE'
       },
       boxShadow: {
         'custom-shadow': 'inset -2px 0px 2px 1px rgba(255,255,255,0.75)',

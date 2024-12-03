@@ -14,10 +14,6 @@ export function UpcomingFocus(props: UpcomingProps) {
   const { monthName, dayName } = todayFormatted
   console.log('todayFormatted:', todayFormatted)
 
-
-
-
-
   useEffect(() => {
     setNextUpTasks()
     setTodayFormatted(getMonthAndDayWords(today.month, today.day))
@@ -51,8 +47,8 @@ export function UpcomingFocus(props: UpcomingProps) {
           <div className="w-32 h-32 rounded-3xl bg-gradient-to-br from-cyan-400 via-sky-400 to-pink-300 p-4 shadow-xl">
             <div className="text-white">
               <div className="text-3xl font-bold mb-1">Jun 9</div>
-              <div className="text-sm font-medium opacity-90">Wednesday</div>
-              <div className="text-sm mt-4 font-medium opacity-75">4 events</div>
+              <div className="text-sm font-medium opacity-90">{todayFormatted.dayName}</div>
+              <div className="text-sm mt-4 font-medium opacity-75">{todayTasks?.length} Tasks</div>
             </div>
           </div>
 

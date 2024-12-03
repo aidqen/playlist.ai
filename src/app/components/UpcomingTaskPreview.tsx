@@ -13,8 +13,8 @@ export function UpcomingTaskPreview(TaskPreviewProps: TaskPreviewProps) {
         <li className="flex items-center gap-2">
             <div className="w-0.5 h-5 bg-cyan-400"></div>
             <div>
-                <div className="text-white font-medium">Product Design</div>
-                <div className="text-gray-400 text-sm">12:00 - 13:30</div>
+                <div className="text-white font-medium">{task?.title}</div>
+                <div className="text-gray-400 text-sm">{startTimeHours} - {endTimeHours}</div>
             </div>
         </li>
     )

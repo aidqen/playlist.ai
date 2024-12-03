@@ -17,8 +17,6 @@ export default function Home() {
   const [todayTasks, setTodayTasks] = useState<any[]>([])
 
 
-
-
   useEffect(() => {
     getTodaysTime()
   }, [user?.tasks])
